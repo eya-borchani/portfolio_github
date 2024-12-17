@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Satisfaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">IIT - Quiz</a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="skills.html">ABOUT MY SKILLS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="quizzuni.html">QUIZZ-UNI</a></li>
+            <li><a href="aboutuni.html">ABOUT MY UNI</a></li>
+            <li><a href="courses.html"> COURSES</a></li>
+        </ul>
+    </nav>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Évaluation de Satisfaction</h1>
+        <p>Partagez votre avis mes amis sur votre première année en Génie Informatique à l'IIT.</p>
+    </header>
+
+    <!-- Photo de l'Université -->
+    <div class="university-image">
+        <img src="images/IIT.jpg" alt="Photo de l'université">
+    </div>
+
+    <!-- Formulaire -->
+    <section class="quiz-section">
+        <form id="quiz-form">
+            <ol>
+                <li>
+                    <label>1. Êtes-vous satisfait(e) des cours dispensés ? *</label><br>
+                    <input type="radio" name="q1" value="Oui"> Oui<br>
+                    <input type="radio" name="q1" value="Non"> Non<br>
+                </li>
+
+                <li>
+                    <label>2. Quelle est votre matière préférée ? *</label><br>
+                    <input type="text" name="q2" required>
+                </li>
+
+                <li>
+                    <label>3. Les enseignants sont-ils disponibles pour vous aider ? *</label><br>
+                    <input type="radio" name="q3" value="Oui"> Oui<br>
+                    <input type="radio" name="q3" value="Non"> Non<br>
+                </li>
+
+                <li>
+                    <label>4. Quel aspect appréciez-vous le plus ? *</label><br>
+                    <select name="q4" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="Cours">Cours</option>
+                        <option value="Pratiques">Travaux Pratiques</option>
+                        <option value="Projets">Projets</option>
+                        <option value="Encadrement">Encadrement</option>
+                    </select>
+                </li>
+
+                <li>
+                    <label>5. Quels sont les points forts de cette année ? *</label><br>
+                    <input type="checkbox" name="q5" value="Cours théoriques"> Cours théoriques<br>
+                    <input type="checkbox" name="q5" value="Travaux pratiques"> Travaux pratiques<br>
+                    <input type="checkbox" name="q5" value="Encadrement des enseignants"> Encadrement des enseignants<br>
+                    <input type="checkbox" name="q5" value="Projets"> Projets<br>
+                    <input type="checkbox" name="q5" value="Infrastructures"> Infrastructures<br>
+                </li>
+            </ol>
+
+            <button type="submit">Soumettre</button>
+        </form>
+
+        <!-- Résumé des Réponses -->
+        <div id="result" style="display: none;">
+            <h2>Résumé des Réponses</h2>
+            <p id="summary"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Institut International Technologique</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
